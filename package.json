@@ -1,0 +1,25 @@
+{
+  "author": "Brian J. Brennan <brianloveswords@gmail.com> (http://bjb.io)",
+  "name": "simpleserver",
+  "description": "Simple TCP command server",
+  "version": "0.0.0",
+  "homepage": "https://github.com/brianloveswords/simpleserver",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brianloveswords/simpleserver.git"
+  },
+  "main": "lib/simpleserver.js",
+  "scripts": {
+    "test": "vows"
+  },
+  "dependencies": {
+    "colors": "*",
+  },
+  "devDependencies": {
+    "vows": "~0.6.2"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "~0.6.17"
+  }
+}
