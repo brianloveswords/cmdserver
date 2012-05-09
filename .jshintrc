@@ -1,0 +1,13 @@
+{
+  "node": true,
+  "strict": false,
+  "indent": 2,
+  "trailing": true,
+  "sub": true,
+  "white": true,
+  "laxbreak": true,
+  "noarg": true,
+  "undef": true,
+  "proto": true,
+  "lastsemic": true
+}

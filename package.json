@@ -10,12 +10,13 @@
   },
   "main": "lib/simpleserver.js",
   "scripts": {
-    "test": "vows"
+    "test": "make test"
   },
   "dependencies": {
-    "colors": "*",
+    "colors": "*"
   },
   "devDependencies": {
+    "jshint": "~0.7.0",
     "vows": "~0.6.2"
   },
   "optionalDependencies": {},
