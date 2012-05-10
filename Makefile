@@ -1,7 +1,7 @@
 all: lint test
 
 test:
-	NODE_ENV=test ./node_modules/.bin/vows
+	NODE_ENV=test ./node_modules/.bin/vows --spec
 
 lint:
 	./node_modules/.bin/jshint lib/*.js
