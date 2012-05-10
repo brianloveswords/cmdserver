@@ -27,7 +27,7 @@ suite.addBatch({
         return app;
       },
       'gets converted to regex before going into routing table' : function (app) {
-        assert.ok(app.routes[0].route.source, '^ship the (.+) to the (.+)$');
+        assert.ok(app.routes[0].route.source, '^ship the (.+?) to the (.+?)$');
       },
     },
   },
@@ -55,7 +55,7 @@ suite.addBatch({
         return app;
       },
       'gets converted to regex before going into routing table' : function (app) {
-        assert.equal(app.routes[1].route.source, '^totally (.+) the (.+)$');
+        assert.equal(app.routes[1].route.source, '^totally (.+?) the (.+?)$');
         assert.equal(app.routes[1].callback, noop);
       },
     },
