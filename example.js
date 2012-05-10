@@ -42,3 +42,4 @@ app.command('bye', function (client) {
 
 
 app.listen(process.argv[2] || 0);
+app.startRepl();
