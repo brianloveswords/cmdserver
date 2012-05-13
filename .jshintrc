@@ -9,5 +9,7 @@
   "noarg": true,
   "undef": true,
   "proto": true,
-  "lastsemic": true
+  "lastsemic": true,
+  "eqeqeq": false,
+  "eqnull": true
 }

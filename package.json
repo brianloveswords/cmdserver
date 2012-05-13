@@ -1,14 +1,14 @@
 {
   "author": "Brian J. Brennan <brianloveswords@gmail.com> (http://bjb.io)",
-  "name": "simpleserver",
+  "name": "cmdserver",
   "description": "Simple TCP command server",
   "version": "0.0.0",
-  "homepage": "https://github.com/brianloveswords/simpleserver",
+  "homepage": "https://github.com/brianloveswords/cmdserver",
   "repository": {
     "type": "git",
-    "url": "git://github.com/brianloveswords/simpleserver.git"
+    "url": "git://github.com/brianloveswords/cmdserver.git"
   },
-  "main": "lib/simpleserver.js",
+  "main": "lib/cmdserver.js",
   "scripts": {
     "test": "make test"
   },
@@ -16,8 +16,9 @@
     "colors": "*"
   },
   "devDependencies": {
+    "optimist": "~0.3.4",
     "jshint": "~0.7.0",
-    "vows": "~0.6.2"
+    "mocha": "~1.0.3"
   },
   "optionalDependencies": {},
   "engines": {
