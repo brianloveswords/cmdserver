@@ -1,5 +1,8 @@
-# cmdserver
+# cmdserver (v0.0.1)
 **client/server command line apps made easy**
+
+## Install
+`npm install cmdserver`
 
 ## API example
 
@@ -121,6 +124,7 @@ debug
 list stacks: show all of the stacks
 example.js> 
 ```
+
 ## TODO
 * add port, host:port connection options
 * add more tests, geez!
