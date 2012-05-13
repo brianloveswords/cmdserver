@@ -1,8 +1,8 @@
 {
   "author": "Brian J. Brennan <brianloveswords@gmail.com> (http://bjb.io)",
   "name": "cmdserver",
-  "description": "Simple TCP command server",
-  "version": "0.0.0",
+  "description": "client/server command line apps made easy",
+  "version": "0.0.1",
   "homepage": "https://github.com/brianloveswords/cmdserver",
   "repository": {
     "type": "git",
