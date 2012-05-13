@@ -121,3 +121,6 @@ debug
 list stacks: show all of the stacks
 example.js> 
 ```
+# TODO
+* add port, host:port connection options
+* add more tests, geez!
