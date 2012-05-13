@@ -38,12 +38,8 @@ describe('commanding', function () {
   });
 
   it('should be able to spit out help', function () {
-    console.log(cmd.help());
-
     cmd.help().should.match(/launches the server like a champ/)
     cmd.help('launch').should.match(/launches the server like a champ/);
     cmd.help('missing').should.match(/not a recognized command/)
   });
-
-
 });
