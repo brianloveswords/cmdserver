@@ -45,7 +45,7 @@ app.command('new <stack>')
 
 app.begin();
 ```
-# client/server model
+## client/server model
 
 You can start a server by doing this:
 
@@ -102,7 +102,7 @@ file /tmp/food.socket
   'seafood' ]
 ```
 
-# Using as a REPL
+## Using as a REPL
 
 If you don't pass any arguments, it will drop you into a REPL
 
@@ -121,6 +121,6 @@ debug
 list stacks: show all of the stacks
 example.js> 
 ```
-# TODO
+## TODO
 * add port, host:port connection options
 * add more tests, geez!
