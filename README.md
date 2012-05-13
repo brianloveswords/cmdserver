@@ -2,7 +2,9 @@
 **client/server command line apps made easy**
 
 ## Install
-`npm install cmdserver`
+```
+npm install cmdserver
+```
 
 ## API example
 
