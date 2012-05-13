@@ -6,12 +6,6 @@ var stacks = {
   meats: []
 };
 
-app.command('pi')
-  .describe('get dem numbas of pi')
-  .execute(function (client) {
-    client.send(Math.PI);
-  });
-
 app.command('add <thing> <stack>')
   .describe('add a thing to a specific stack')
   .option('method [push|unshift]', 'method for adding. Defaults to `push`', 'push')
