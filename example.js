@@ -1,5 +1,5 @@
 var util = require('util');
-var app = require('./lib/cmdserver.js')(process.argv);
+var app = require('cmdserver')(process.argv);
 
 var stacks = {
   vegetables: [],
