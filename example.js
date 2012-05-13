@@ -30,7 +30,7 @@ app.command('items <stack>')
     client.send(display);
   });
 
-app.command('list-stacks')
+app.command('list stacks')
   .describe('show all of the stacks')
   .execute(function (client, stack) {
     var display = util.inspect(Object.keys(stacks), undefined, undefined, true);
