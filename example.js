@@ -1,6 +1,5 @@
 var util = require('util');
-var cmd = require('./lib/cmdserver.js');
-var app = cmd.createServer(process.argv);
+var app = require('./lib/cmdserver.js')(process.argv);
 
 var stacks = {
   vegetables: [],
@@ -23,7 +22,7 @@ app.command('add <thing> <stack>')
     client.send(util.format('%sed `%s` to `%s`', opts.method, thing, stack));
   })
 
-app.command('items <stack>')
+app.command('show <stack>')
   .describe('show the contents of a specific stack')
   .execute(function (client, stack) {
     var display = util.inspect(stacks[stack], undefined, undefined, true);
@@ -45,4 +44,3 @@ app.command('new <stack>')
   });
 
 app.begin();
-
