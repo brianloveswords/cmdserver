@@ -1,7 +1,7 @@
 # cmdserver
 **client/server command line apps made easy**
 
-## Using `cmdserver`
+## API example
 
 ```js
 var util = require('util');
@@ -45,6 +45,9 @@ app.command('new <stack>')
 
 app.begin();
 ```
+# client/server model
+
+You can start a server by doing this:
 
 ```
 ± node example.js -S /tmp/food.socket    
@@ -52,8 +55,10 @@ file /tmp/food.socket
 debug listening: '/tmp/food.socket'
 ```
 
+Then, in another terminal session, you can connect to the server by running
+the same command:
+
 ```
-# in another terminal session
 ± node example.js -S /tmp/food.socket
 file /tmp/food.socket
 /tmp/food.socket < help
@@ -74,9 +79,11 @@ new <stack>: make a brand new stack, hhyyeaaaaa
 /tmp/food.socket > adding new stack `seafood`
 ```
 
+You can have as many clients open as you want, go nuts:
 
 ```
 # in yet another terminal session
+
 ± node example.js -S /tmp/food.socket
 file /tmp/food.socket
 /tmp/food.socket < list stacks
@@ -87,4 +94,30 @@ file /tmp/food.socket
 /tmp/food.socket > [ 'pork shoulder',
   'beef',
   'cold cuts' ]
+
+# you can also perform one-off commands
+± node example.js -S /tmp/food.socket "list stacks"
+[ 'vegetables',
+  'meats',
+  'seafood' ]
+```
+
+# Using as a REPL
+
+If you don't pass any arguments, it will drop you into a REPL
+
+```
+± node example.js                                  
+example.js> help
+debug 
+add <thing> <stack>: add a thing to a specific stack
+  method [push|unshift]  method for adding. Defaults to `push` 
+show <stack>: show the contents of a specific stack
+list stacks: show all of the stacks
+new <stack>: make a brand new stack, hhyyeaaaaa
+
+example.js> help list stacks
+debug 
+list stacks: show all of the stacks
+example.js> 
 ```
