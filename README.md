@@ -1,5 +1,5 @@
 # cmdserver (v0.0.1)
-**client/server command line apps made easy**
+**client/server command line apps made easy (think `tmux`)**
 
 ## Install
 ```
