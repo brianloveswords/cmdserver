@@ -2,7 +2,7 @@
   "author": "Brian J. Brennan <brianloveswords@gmail.com> (http://bjb.io)",
   "name": "cmdserver",
   "description": "client/server command line apps made easy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/brianloveswords/cmdserver",
   "repository": {
     "type": "git",
@@ -14,9 +14,9 @@
   },
   "dependencies": {
     "colors": "*"
+    "optimist": "~0.3.4",
   },
   "devDependencies": {
-    "optimist": "~0.3.4",
     "jshint": "~0.7.0",
     "mocha": "~1.0.3"
   },
