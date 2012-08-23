@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/brianloveswords/cmdserver.png)](http://travis-ci.org/brianloveswords/cmdserver)
 # cmdserver (v0.0.1)
 **client/server command line apps made easy (think `tmux`)**
 
